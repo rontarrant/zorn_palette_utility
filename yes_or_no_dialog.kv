@@ -1,0 +1,53 @@
+#:kivy 1.1.0
+#: import os os
+#: import sys sys
+#filename yes_or_no_dialogs.kv
+<NewYesOrNoDialog>:
+	BoxLayout:
+		size: root.size
+		pos: root.pos
+		orientation: "vertical"
+		
+		Label:
+			text: "The current palette is not saved. Do you want to save it now?"
+		BoxLayout:
+			size_hint_y: None
+			height: 30
+			
+			Button:
+				text: "Yes"
+				path: app.user_data_dir
+				on_release:
+					print("calling new_yes_no_func with: True")
+					root.new_yes_no_func(True)
+				
+			Button:
+				text: "No"
+				on_release:
+					print("calling new_yes_no_func with: False")
+					root.new_yes_no_func(False)
+
+<LoadYesOrNoDialog>:
+	BoxLayout:
+		size: root.size
+		pos: root.pos
+		orientation: "vertical"
+		
+		Label:
+			text: "The current palette is not saved. Do you want to save it now?"
+		BoxLayout:
+			size_hint_y: None
+			height: 30
+			
+			Button:
+				text: "Yes"
+				path: app.user_data_dir
+				on_release:
+					print("calling load_yes_no_func with: True")
+					root.load_yes_no_func(True)
+				
+			Button:
+				text: "No"
+				on_release:
+					print("calling load_yes_no_func with: False")
+					root.load_yes_no_func(False)

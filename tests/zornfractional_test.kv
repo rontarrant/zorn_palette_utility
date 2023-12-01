@@ -1,0 +1,16 @@
+<MyLabel>: ## COLUMN 3
+	id: colour_01
+	text: "C1"
+	text_size: self.size
+	size_hint: None, None
+	width: 100
+	height: 100
+	dynamic_colour: [0.952941176, 0.956862745, 0.968627451, 1.0] ## Titanium White
+	##dynamic_colour: (1, 1, 1, 1)
+
+	canvas.before:
+		Color:
+			rgba: self.dynamic_colour
+		Rectangle:
+			pos: self.pos
+			size: self.size

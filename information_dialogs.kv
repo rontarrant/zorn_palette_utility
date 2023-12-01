@@ -1,0 +1,18 @@
+<Information>:
+	BoxLayout:
+		orientation: 'vertical'
+		size_hint: None, None
+		width: 400
+		height: self.parent.height / 2
+		pos_hint: {'center_y': 1, 'center_x': .5}
+		
+		Label:
+			text: "Go ahead, press my button"
+
+		Button:
+			text: "Exit Pop-up"
+			## Using the confirm ObjectProperty() declared
+			## as an Information class property in the .py
+			## file, this calls a method in the RootWindow
+			## by the same name: confirm().
+			on_release: root.confirm()

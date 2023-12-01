@@ -1,0 +1,435 @@
+## zorn.kv
+#:import colours web_safe_subset_rgb
+
+<ZornGridLayout>:
+	rows: 6
+	cols: 5
+	
+	## First row
+	BoxLayout:
+		orientation: 'vertical'
+		size_hint: None, None
+		width: 150
+		height: 150
+		NewButton:
+			id: new_button
+			text: "New"
+			size_hint: None, None
+			width: 150
+			height: 50
+			on_release: self.create_new()
+		LoadButton:
+			id: load_button
+			text: "Load"
+			size_hint: None, None
+			width: 150
+			height: 50
+			on_release: self.load_palette()
+		SaveButton:
+			id: save_button
+			text: "Save"
+			size_hint: None, None
+			width: 150
+			height: 50
+			on_release: self.save_palette()
+
+	Label:
+		text: ""
+		text_size: self.size
+		size_hint: None, None
+		width: 150
+		height: 150
+		
+	Colour01Spinner:
+		id: colour_01_spinner
+		text: "Colour 1"
+		values: colours.WebColours
+		size_hint: None, None
+		size: 150, 150
+		pos_hint: {'x': 0, 'top': 1}
+
+		on_text:
+			self.set_spinner_chip(self.text, colour_01)
+			root.calculate_colours()
+
+	Label:
+		text: ""
+		text_size: self.size
+		size_hint: None, None
+		width: 150
+		height: 150
+
+	Colour02Spinner:
+		id: colour_02_spinner
+		text: "Colour 2"
+		values: colours.WebColours
+		size_hint: None, None
+		size: 150, 150
+		pos_hint: {'right': 1, 'top': 1}
+
+		on_text:
+			self.set_spinner_chip(self.text, colour_02)
+			root.calculate_colours()
+	
+	## Second row
+	Label:
+		text: ""
+		text_size: self.size
+		size_hint: None, None
+		width: 150
+		height: 150
+
+	Label:
+		text: ""
+		text_size: self.size
+		size_hint: None, None
+		width: 150
+		height: 150
+
+	Label:
+		id: colour_01
+		text: "C1"
+		text_size: self.size
+		size_hint: None, None
+		width: 150
+		height: 150
+		dynamic_colour: (1, 1, 1, 1)
+
+		canvas.before:
+			Color:
+				rgba: self.dynamic_colour
+			Rectangle:
+				pos: self.pos
+				size: self.size
+
+	Label:
+		id: chip_01
+		text: "chip 01"
+		text_size: self.size
+		size_hint: None, None
+		width: 150
+		height: 150
+		dynamic_colour: (1, 1, 1, 1)
+
+		canvas.before:
+			Color:
+				rgba: self.dynamic_colour
+			Rectangle:
+				pos: self.pos
+				size: self.size
+
+	Label:
+		id: colour_02
+		text: "C2"
+		text_size: self.size
+		size_hint: None, None
+		width: 150
+		height: 150
+		dynamic_colour: (1, 1, 1, 1)
+
+		canvas.before:
+			Color:
+				rgba: self.dynamic_colour
+			Rectangle:
+				pos: self.pos
+				size: self.size
+
+	## Third row
+	Tint01Spinner:
+		id: tint_01_spinner
+		text: "Tint 1"
+		values: reversed(colours.WebColours)
+		size_hint: None, None
+		size: 150, 150
+		pos_hint: {'left': 1, 'top': 1}
+
+		on_text:
+			self.set_spinner_chip(self.text, tint_01)
+			root.calculate_colours()
+
+	Label:
+		id: tint_01
+		text: "T1"
+		text_size: self.size
+		size_hint: None, None
+		width: 150
+		height: 150
+		dynamic_colour: (1, 1, 1, 1)
+
+		canvas.before:
+			Color:
+				rgba: self.dynamic_colour
+			Rectangle:
+				pos: self.pos
+				size: self.size
+
+	Label:
+		id: chip_04
+		text: "chip 04"
+		text_size: self.size
+		size_hint: None, None
+		width: 150
+		height: 150
+		dynamic_colour: (1, 1, 1, 1)
+
+		canvas.before:
+			Color:
+				rgba: self.dynamic_colour
+			Rectangle:
+				pos: self.pos
+				size: self.size
+
+	Label:
+		id: chip_11
+		text: "chip 11"
+		text_size: self.size
+		size_hint: None, None
+		width: 150
+		height: 150
+		dynamic_colour: (1, 1, 1, 1)
+
+		canvas.before:
+			Color:
+				rgba: self.dynamic_colour
+			Rectangle:
+				pos: self.pos
+				size: self.size
+
+	Label:
+		id: chip_08
+		text: "chip 08"
+		text_size: self.size
+		size_hint: None, None
+		width: 150
+		height: 150
+		dynamic_colour: (1, 1, 1, 1)
+
+		canvas.before:
+			Color:
+				rgba: self.dynamic_colour
+			Rectangle:
+				pos: self.pos
+				size: self.size
+
+	## Fourth row
+	Label:
+		text: ""
+		text_size: self.size
+		size_hint: None, None
+		width: 150
+		height: 150
+
+	Label:
+		id: chip_02
+		text: "chip 02"
+		text_size: self.size
+		size_hint: None, None
+		width: 150
+		height: 150
+		dynamic_colour: (1, 1, 1, 1)
+
+		canvas.before:
+			Color:
+				rgba: self.dynamic_colour
+			Rectangle:
+				pos: self.pos
+				size: self.size
+
+	Label:
+		id: chip_14
+		text: "chip 14"
+		text_size: self.size
+		size_hint: None, None
+		width: 150
+		height: 150
+		dynamic_colour: (1, 1, 1, 1)
+
+		canvas.before:
+			Color:
+				rgba: self.dynamic_colour
+			Rectangle:
+				pos: self.pos
+				size: self.size
+
+	Label:
+		id: chip_15
+		text: "chip 15"
+		text_size: self.size
+		size_hint: None, None
+		width: 150
+		height: 150
+		dynamic_colour: (1, 1, 1, 1)
+
+		canvas.before:
+			Color:
+				rgba: self.dynamic_colour
+			Rectangle:
+				pos: self.pos
+				size: self.size
+
+	Label:
+		id: chip_09
+		text: "chip 09"
+		text_size: self.size
+		size_hint: None, None
+		width: 150
+		height: 150
+		dynamic_colour: (1, 1, 1, 1)
+
+		canvas.before:
+			Color:
+				rgba: self.dynamic_colour
+			Rectangle:
+				pos: self.pos
+				size: self.size
+
+	## Fifth row
+	Label:
+		text: ""
+		text_size: self.size
+		size_hint: None, None
+		width: 150
+		height: 150
+
+	Label:
+		id: chip_03
+		text: "chip 03"
+		text_size: self.size
+		size_hint: None, None
+		width: 150
+		height: 150
+		dynamic_colour: (1, 1, 1, 1)
+
+		canvas.before:
+			Color:
+				rgba: self.dynamic_colour
+			Rectangle:
+				pos: self.pos
+				size: self.size
+
+	Label:
+		id: chip_12
+		text: "chip 12"
+		text_size: self.size
+		size_hint: None, None
+		width: 150
+		height: 150
+		dynamic_colour: (1, 1, 1, 1)
+
+		canvas.before:
+			Color:
+				rgba: self.dynamic_colour
+			Rectangle:
+				pos: self.pos
+				size: self.size
+
+	Label:
+		id: chip_13
+		text: "chip 13"
+		text_size: self.size
+		size_hint: None, None
+		width: 150
+		height: 150
+		dynamic_colour: (1, 1, 1, 1)
+
+		canvas.before:
+			Color:
+				rgba: self.dynamic_colour
+			Rectangle:
+				pos: self.pos
+				size: self.size
+
+	Label:
+		id: chip_10
+		text: "chip 10"
+		text_size: self.size
+		size_hint: None, None
+		width: 150
+		height: 150
+		dynamic_colour: (1, 1, 1, 1)
+
+		canvas.before:
+			Color:
+				rgba: self.dynamic_colour
+			Rectangle:
+				pos: self.pos
+				size: self.size
+
+	## Sixth row
+	Tint02Spinner:
+		id: side_colour_02
+		text: "Tint 2"
+		values: reversed(colours.WebColours)
+		size_hint: None, None
+		size: 150, 150
+		pos_hint: {'left': 1, 'top': 1}
+
+		on_text:
+			self.set_spinner_chip(self.text, tint_02)
+			root.calculate_colours()
+
+	Label:
+		id: tint_02
+		text: "T2"
+		text_size: self.size
+		size_hint: None, None
+		width: 150
+		height: 150
+		dynamic_colour: (1, 1, 1, 1)
+
+		canvas.before:
+			Color:
+				rgba: self.dynamic_colour
+			Rectangle:
+				pos: self.pos
+				size: self.size
+
+	Label:
+		id: chip_06
+		text: "chip 06"
+		text_size: self.size
+		size_hint: None, None
+		width: 150
+		height: 150
+		dynamic_colour: (1, 1, 1, 1)
+
+		canvas.before:
+			Color:
+				rgba: self.dynamic_colour
+			Rectangle:
+				pos: self.pos
+				size: self.size
+
+	Label:
+		id: chip_07
+		text: "chip 07"
+		text_size: self.size
+		size_hint: None, None
+		width: 150
+		height: 150
+		dynamic_colour: (1, 1, 1, 1)
+
+		canvas.before:
+			Color:
+				rgba: self.dynamic_colour
+			Rectangle:
+				pos: self.pos
+				size: self.size
+
+	Label:
+		id: chip_05
+		text: "chip 05"
+		text_size: self.size
+		size_hint: None, None
+		width: 150
+		height: 150
+		dynamic_colour: (1, 1, 1, 1)
+
+		canvas.before:
+			Color:
+				rgba: self.dynamic_colour
+			Rectangle:
+				pos: self.pos
+				size: self.size
+
+

@@ -1,0 +1,265 @@
+## zorn.kv
+#:import colours magic_palette_colorkit_fractional
+
+## This forces Spinner Value strings to wrap text in the dropdown,
+## gives it a bit of left margin, and centers it vertically.
+## It's pulled into all ColourXXSpinner widgets using the
+## option_cls property.
+<MySpinnerOption@SpinnerOption>:
+	text_size: self.width - 10, None
+	size_hint: self.height, None
+	height: 70
+
+
+<ColourChip>:
+	text: ""
+	text_size: self.size
+	size_hint: None, None
+	halign: "center"
+	width: 100
+	height: 100
+	dynamic_colour: [0.952941176, 0.956862745, 0.968627451, 1.0] ## Titanium White
+	
+	canvas.before:
+		Color:
+			rgba: self.dynamic_colour
+		Rectangle:
+			pos: self.pos
+			size: self.size
+
+
+<ZornGridLayout>:
+	rows: 7
+	cols: 6
+
+	##################### ROW 1 ##################
+	BoxLayout: ## COLUMN 4
+		orientation: 'vertical'
+		size_hint: None, None
+		width: 100
+		height: 100
+		NewButton:
+			id: new_button
+			text: "New"
+			size_hint: None, None
+			width: 100
+			height: 50
+			on_release: root.on_new_button_pressed()
+		LoadButton:
+			id: load_button
+			text: "Load"
+			size_hint: None, None
+			width: 100
+			height: 50
+			on_release: root.on_load_button_pressed()
+
+	BoxLayout: ## COLUMN 5
+		orientation: 'vertical'
+		size_hint: None, None
+		width: 100
+		height: 100
+		SaveButton:
+			id: save_button
+			text: "Save"
+			size_hint: None, None
+			width: 100
+			height: 50
+			on_release: root.on_save_button_pressed()
+		SaveAsButton:
+			id: save_as_button
+			text: "Save As..."
+			size_hint: None, None
+			width: 100
+			height: 50
+			on_release: root.on_save_as_button_pressed()
+
+	Mix01Spinner: ## COLUMN 2
+		id: mix_01_spinner
+		text: "Titanium White"
+		text_size: self.width, None ## forces text to wrap on the Spinner header
+		values: reversed(colours.ColourLookUp)
+		option_cls: "MySpinnerOption" ## see <MySpinnerOption> at top of file
+		size_hint: None, None
+		size: 100, 100
+		pos_hint: {'left': 1, 'top': 1}
+
+		on_text:
+			self.set_spinner_chip(self.text, mix_01)
+			root.calculate_colours()
+
+
+	Mix02Spinner: ## COLUMN 2
+		id: mix_02_spinner
+		text: "Titanium White"
+		text_size: self.width, None ## forces text to wrap on the Spinner header
+		values: reversed(colours.ColourLookUp)
+		option_cls: "MySpinnerOption" ## see <MySpinnerOption> at top of file
+		size_hint: None, None
+		size: 100, 100
+		pos_hint: {'left': 1, 'top': 1}
+
+		on_text:
+			self.set_spinner_chip(self.text, mix_02)
+			root.calculate_colours()
+
+	Colour01Spinner: ## COLUMN 3
+		id: colour_01_spinner
+		text: "Titanium White"
+		text_size: self.width, None ## forces text to wrap on the Spinner header
+		values: colours.ColourLookUp
+		option_cls: "MySpinnerOption" ## see <MySpinnerOption> at top of file
+		size_hint: None, None
+		size: 100, 100
+		pos_hint: {'x': 0, 'top': 1}
+
+		on_text:
+			self.set_spinner_chip(self.text, colour_01)
+			root.calculate_colours()
+
+	Colour02Spinner: ## COLUMN 7
+		id: colour_02_spinner
+		text: "Titanium White"
+		text_size: self.width, None ## forces text to wrap on the Spinner header
+		values: colours.ColourLookUp
+		option_cls: "MySpinnerOption" ## see <MySpinnerOption> at top of file
+		size_hint: None, None
+		size: 100, 100
+		pos_hint: {'right': 1, 'top': 1}
+
+		on_text:
+			self.set_spinner_chip(self.text, colour_02)
+			root.calculate_colours()
+	
+	##################### ROW 2 ##################
+	BoxLayout: ## COLUMN 6
+		orientation: 'vertical'
+		size_hint: None, None
+		width: 100
+		height: 100
+		ReloadButton:
+			id: reload_button
+			text: "Reload"
+			size_hint: None, None
+			width: 100
+			height: 50
+			on_release: root.on_reload_button_pressed()
+		QuitButton:
+			id: quit_button
+			text: "Quit"
+			size_hint: None, None
+			width: 100
+			height: 50
+			on_release:
+				self.clean_up()
+				app.exit_check()
+
+	ColourChip: ## COLUMN 3
+		id: colour_01
+
+	ColourChip: ## COLUMN 4
+		id: chip_01
+
+	ColourChip: ## COLUMN 5
+		id: chip_02
+
+	ColourChip: ## COLUMN 6
+		id: chip_03
+
+	ColourChip: ## COLUMN 7
+		id: colour_02
+
+	##################### ROW 3 ##################
+	ColourChip: ## COLUMN 2
+		id: mix_01
+
+	ColourChip: ## COLUMN 3
+		id: chip_04
+
+	ColourChip: ## COLUMN 4
+		id: chip_05
+
+	ColourChip: ## COLUMN 5
+		id: chip_06
+
+	ColourChip: ## COLUMN 6
+		id: chip_07
+
+	ColourChip: ## COLUMN 7
+		id: chip_08
+
+	##################### ROW 4 ##################
+	ColourChip: ## COLUMN 2
+		id: chip_09
+
+	ColourChip: ## COLUMN 3
+		id: chip_10
+
+	ColourChip: ## COLUMN 4
+		id: chip_11
+
+	ColourChip: ## COLUMN 5
+		id: chip_12
+
+	ColourChip: ## COLUMN 6
+		id: chip_13
+
+	ColourChip: ## COLUMN 7
+		id: chip_14
+
+	##################### ROW 5 ##################
+	ColourChip: ## COLUMN 2
+		id: chip_15
+
+	ColourChip: ## COLUMN 3
+		id: chip_16
+
+	ColourChip: ## COLUMN 4
+		id: chip_17
+
+	ColourChip: ## COLUMN 5
+		id: chip_18
+
+	ColourChip: ## COLUMN 6
+		id: chip_19
+
+	ColourChip: ## COLUMN 7
+		id: chip_20
+
+	##################### ROW 6 ##################
+	ColourChip: ## COLUMN 2
+		id: chip_21
+
+	ColourChip: ## COLUMN 3
+		id: chip_22
+
+	ColourChip: ## COLUMN 4
+		id: chip_23
+
+	ColourChip: ## COLUMN 5
+		id: chip_24
+
+	ColourChip: ## COLUMN 6
+		id: chip_25
+
+	ColourChip: ## COLUMN 7
+		id: chip_26
+
+	##################### ROW 7 ##################
+	ColourChip: ## COLUMN 2
+		id: mix_02
+
+	ColourChip: ## COLUMN 3
+		id: chip_27
+
+	ColourChip: ## COLUMN 4
+		id: chip_28
+
+	ColourChip: ## COLUMN 5
+		id: chip_29
+
+	ColourChip: ## COLUMN 6
+		id: chip_30
+
+
+	ColourChip: ## COLUMN 7
+		id: chip_31

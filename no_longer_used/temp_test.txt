@@ -1,0 +1,43 @@
+show load...
+load...
+ ic| zorn_fractional.py:152 in load()
+     path: 'C:\\Users\\ron\\AppData\\Roaming\\zornfractional'
+     filename: ['C:\\Users\\ron\\AppData\\Roaming\\zornfractional\\another_name.csv']
+	  
+ ic| zorn_fractional.py:156 in load()
+     self.filename: 'C:\\Users\\ron\\AppData\\Roaming\\zornfractional\\another_name.csv'
+	  
+ ic| csv_file.py:15 in load_csv()
+     file_name: 'C:\\Users\\ron\\AppData\\Roaming\\zornfractional\\another_name.csv'
+check_file_contents...
+
+dismiss_popup...
+
+ ic| zorn_fractional.py:171 in load()
+     self.filename: 'C:\\Users\\ron\\AppData\\Roaming\\zornfractional\\another_name.csv'
+	  
+save_as...
+ ic| zorn_fractional.py:211 in save_as()
+     self.full_path_and_file: None
+     self.path: None
+     self.filename: 'C:\\Users\\ron\\AppData\\Roaming\\zornfractional\\another_name.csv'
+	  
+show_save...
+
+[INFO   ] [Base        ] Leaving application in progress...
+ Traceback (most recent call last):
+   File "D:\Documents\Programming\PythonCode\kivy_code\zorn\zorn_fractional.py", line 329, in <module>
+     ZornFractionalApp().run()
+	  
+
+	  
+   File "D:\Documents\Programming\PythonCode\kivy_code\zorn\main_window.kv", line 102, in <module>
+     on_release: root.save_as()
+  ^^^^^^^^^^^^^^
+   File "D:\Documents\Programming\PythonCode\kivy_code\zorn\zorn_fractional.py", line 220, in save_as
+     self.file_works.save_csv(self.path, self.filename, data)
+	  
+   File "D:\Documents\Programming\PythonCode\kivy_code\zorn\csv_file.py", line 26, in save_csv
+     full_file_name = path + "/" + file_name
+                      ~~~~~^~~~~
+ TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'

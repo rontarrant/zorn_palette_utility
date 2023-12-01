@@ -1,0 +1,136 @@
+*******************
+This error was the result of overwriting the version of magic_palette_fractional.py
+that had the self-referential colours, namely, Titanium White mixed with Titanium White.
+When two spinners were set to "Titanium White," the look-up wasn't found because
+the Titanium White chip didn't contain a mix colour of Titanium White.
+*******************
+set_spinner_chip() - colour_name:  Ivory Black , label:  T1
+
+base_colour_chip:  ((0.168627451, 0.203921569, 0.2, 1), ((0.317647059, 0.37254902, 0.164705882, 1), (0.996078431, 0.996078431, 0), 'Cadmium Yellow Light'), ((0.450980392, 0.431372549, 0.17254902, 1), (1, 0.807843137, 0.098039216), 'Cadmium Yellow Medium'), ((0.364705882, 0.22745098, 0.101960784, 1), (1, 0.580392157, 0.196078431), 'Cadmium Orange'), ((0.498039216, 0.176470588, 0.184313725, 1), (0.996078431, 0.243137255, 0.152941176), 'Cadmium Red Light'), ((0.403921569, 0.039215686, 0.223529412, 1), (0.819607843, 0.121568627, 0.419607843), 'Quinacridone Red'), ((0.403921569, 0.039215686, 0.223529412, 1), (0.733333333, 0.309803922, 0.647058824), 'Quinacridone Magenta'), ((0.301960784, 0.188235294, 0.368627451, 1), (0.423529412, 0.184313725, 0.556862745), 'Dioxazine Purple'), ((0.137254902, 0.219607843, 0.352941176, 1), (0.141176471, 0.282352941, 0.588235294), 'Ultramarine Blue'), ((0.137254902, 0.278431373, 0.407843137, 1), (0.003921569, 0.478431373, 0.788235294), 'Phthalo Blue'), ((0.047058824, 0.462745098, 0.517647059, 1), (0, 0.752941176, 0.796078431), 'Cobalt Teal'), ((0, 0.31372549, 0.266666667, 1), (0.003921569, 0.533333333, 0.301960784), 'Phthalo Green'), ((0.219607843, 0.415686275, 0.231372549, 1), (0.333333333, 0.768627451, 0.305882353), 'Yellow Green'), ((0.556862745, 0.576470588, 0.580392157, 1), (0.952941176, 0.956862745, 0.968627451), 'Titanium White'))
+
+Spinner 1 not set
+set_spinner_chip() - colour_name:  Titanium White , label:  C1
+
+base_colour_chip:  ((0.952941176, 0.956862745, 0.968627451, 1), ((0.97254902, 0.976470588, 0.482352941, 1), (0.996078431, 0.996078431, 0), 'Cadmium Yellow Light'), ((0.97254902, 0.878431373, 0.529411765, 1), (1, 0.807843137, 0.098039216), 'Cadmium Yellow Medium'), ((0.97254902, 0.768627451, 0.580392157, 1), (1, 0.580392157, 0.196078431), 'Cadmium Orange'), ((0.97254902, 0.6, 0.556862745, 1), (0.996078431, 0.243137255, 0.152941176), 'Cadmium Red Light'), ((0.882352941, 0.537254902, 0.690196078, 1), (0.819607843, 0.121568627, 0.419607843), 'Quinacridone Red'), ((0.839215686, 0.631372549, 0.807843137, 1), (0.733333333, 0.309803922, 0.647058824), 'Quinacridone Magenta'), ((0.68627451, 0.568627451, 0.760784314, 1), (0.423529412, 0.184313725, 0.556862745), 'Dioxazine Purple'), ((0.545098039, 0.619607843, 0.776470588, 1), (0.141176471, 0.282352941, 0.588235294), 'Ultramarine Blue'), ((0.474509804, 0.717647059, 0.874509804, 1), (0.003921569, 0.478431373, 0.788235294), 'Phthalo Blue'), ((0.474509804, 0.850980392, 0.878431373, 1), (0, 0.752941176, 0.796078431), 'Cobalt Teal'), ((0.474509804, 0.745098039, 0.635294118, 1), (0.003921569, 0.533333333, 0.301960784), 'Phthalo Green'), ((0.639215686, 0.862745098, 0.635294118, 1), (0.333333333, 0.768627451, 0.305882353), 'Yellow Green'), ((0.556862745, 0.576470588, 0.580392157, 1), (0.168627451, 0.203921569, 0.2), 'Ivory Black'))
+
+Spinner 2 not set
+set_spinner_chip() - colour_name:  Titanium White , label:  C2
+
+base_colour_chip:  ((0.952941176, 0.956862745, 0.968627451, 1), ((0.97254902, 0.976470588, 0.482352941, 1), (0.996078431, 0.996078431, 0), 'Cadmium Yellow Light'), ((0.97254902, 0.878431373, 0.529411765, 1), (1, 0.807843137, 0.098039216), 'Cadmium Yellow Medium'), ((0.97254902, 0.768627451, 0.580392157, 1), (1, 0.580392157, 0.196078431), 'Cadmium Orange'), ((0.97254902, 0.6, 0.556862745, 1), (0.996078431, 0.243137255, 0.152941176), 'Cadmium Red Light'), ((0.882352941, 0.537254902, 0.690196078, 1), (0.819607843, 0.121568627, 0.419607843), 'Quinacridone Red'), ((0.839215686, 0.631372549, 0.807843137, 1), (0.733333333, 0.309803922, 0.647058824), 'Quinacridone Magenta'), ((0.68627451, 0.568627451, 0.760784314, 1), (0.423529412, 0.184313725, 0.556862745), 'Dioxazine Purple'), ((0.545098039, 0.619607843, 0.776470588, 1), (0.141176471, 0.282352941, 0.588235294), 'Ultramarine Blue'), ((0.474509804, 0.717647059, 0.874509804, 1), (0.003921569, 0.478431373, 0.788235294), 'Phthalo Blue'), ((0.474509804, 0.850980392, 0.878431373, 1), (0, 0.752941176, 0.796078431), 'Cobalt Teal'), ((0.474509804, 0.745098039, 0.635294118, 1), (0.003921569, 0.533333333, 0.301960784), 'Phthalo Green'), ((0.639215686, 0.862745098, 0.635294118, 1), (0.333333333, 0.768627451, 0.305882353), 'Yellow Green'), ((0.556862745, 0.576470588, 0.580392157, 1), (0.168627451, 0.203921569, 0.2), 'Ivory Black'))
+
+Spinner 4 not set
+set_spinner_chip() - colour_name:  Titanium White , label:  T2
+
+base_colour_chip:  ((0.952941176, 0.956862745, 0.968627451, 1), ((0.97254902, 0.976470588, 0.482352941, 1), (0.996078431, 0.996078431, 0), 'Cadmium Yellow Light'), ((0.97254902, 0.878431373, 0.529411765, 1), (1, 0.807843137, 0.098039216), 'Cadmium Yellow Medium'), ((0.97254902, 0.768627451, 0.580392157, 1), (1, 0.580392157, 0.196078431), 'Cadmium Orange'), ((0.97254902, 0.6, 0.556862745, 1), (0.996078431, 0.243137255, 0.152941176), 'Cadmium Red Light'), ((0.882352941, 0.537254902, 0.690196078, 1), (0.819607843, 0.121568627, 0.419607843), 'Quinacridone Red'), ((0.839215686, 0.631372549, 0.807843137, 1), (0.733333333, 0.309803922, 0.647058824), 'Quinacridone Magenta'), ((0.68627451, 0.568627451, 0.760784314, 1), (0.423529412, 0.184313725, 0.556862745), 'Dioxazine Purple'), ((0.545098039, 0.619607843, 0.776470588, 1), (0.141176471, 0.282352941, 0.588235294), 'Ultramarine Blue'), ((0.474509804, 0.717647059, 0.874509804, 1), (0.003921569, 0.478431373, 0.788235294), 'Phthalo Blue'), ((0.474509804, 0.850980392, 0.878431373, 1), (0, 0.752941176, 0.796078431), 'Cobalt Teal'), ((0.474509804, 0.745098039, 0.635294118, 1), (0.003921569, 0.533333333, 0.301960784), 'Phthalo Green'), ((0.639215686, 0.862745098, 0.635294118, 1), (0.333333333, 0.768627451, 0.305882353), 'Yellow Green'), ((0.556862745, 0.576470588, 0.580392157, 1), (0.168627451, 0.203921569, 0.2), 'Ivory Black'))
+
+set_colours() mix_colour:  None
+
+[INFO   ] [Base        ] Leaving application in progress...
+ Traceback (most recent call last):
+   File "D:\Documents\Programming\PythonCode\kivy_code\zorn\zorn_fractional.py", line 86, in <module>
+     ZornFractionalApp().run()
+   File "C:\Users\ron\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\app.py", line 956, in run
+     runTouchApp()
+   File "C:\Users\ron\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 574, in runTouchApp
+     EventLoop.mainloop()
+   File "C:\Users\ron\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 339, in mainloop
+     self.idle()
+   File "C:\Users\ron\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 383, in idle
+     self.dispatch_input()
+   File "C:\Users\ron\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 334, in dispatch_input
+     post_dispatch_input(*pop(0))
+   File "C:\Users\ron\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\base.py", line 302, in post_dispatch_input
+     wid.dispatch('on_touch_up', me)
+   File "kivy\_event.pyx", line 731, in kivy._event.EventDispatcher.dispatch
+   File "C:\Users\ron\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\uix\behaviors\button.py", line 179, in on_touch_up
+     self.dispatch('on_release')
+   File "kivy\_event.pyx", line 727, in kivy._event.EventDispatcher.dispatch
+   File "kivy\_event.pyx", line 1307, in kivy._event.EventObservers.dispatch
+   File "kivy\_event.pyx", line 1231, in kivy._event.EventObservers._dispatch
+   File "C:\Users\ron\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\uix\spinner.py", line 196, in <lambda>
+     item.bind(on_release=lambda option: dp.select(option.text))
+                                         ^^^^^^^^^^^^^^^^^^^^^^
+   File "C:\Users\ron\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\uix\dropdown.py", line 277, in select
+     self.dispatch('on_select', data)
+   File "kivy\_event.pyx", line 727, in kivy._event.EventDispatcher.dispatch
+   File "kivy\_event.pyx", line 1307, in kivy._event.EventObservers.dispatch
+   File "kivy\_event.pyx", line 1231, in kivy._event.EventObservers._dispatch
+   File "C:\Users\ron\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\uix\spinner.py", line 213, in _on_dropdown_select
+     self.text = data
+     ^^^^^^^^^
+   File "kivy\properties.pyx", line 520, in kivy.properties.Property.__set__
+   File "kivy\properties.pyx", line 567, in kivy.properties.Property.set
+   File "kivy\properties.pyx", line 606, in kivy.properties.Property._dispatch
+   File "kivy\_event.pyx", line 1307, in kivy._event.EventObservers.dispatch
+   File "kivy\_event.pyx", line 1189, in kivy._event.EventObservers._dispatch
+   File "C:\Users\ron\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\lang\builder.py", line 55, in custom_callback
+     exec(__kvlang__.co_value, idmap)
+   File "D:\Documents\Programming\PythonCode\kivy_code\zorn\zornfractional.kv", line 209, in <module>
+     root.calculate_colours()
+   File "D:\Documents\Programming\PythonCode\kivy_code\zorn\zorn_fractional.py", line 75, in calculate_colours
+     self.calc_colours.set_colours(self.ids)
+	  
+   File "D:\Documents\Programming\PythonCode\kivy_code\zorn\colour_calculations_fractional.py", line 103, in set_colours
+     ids.colour_01_spinner.text = "Titanium White"
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+	  
+   File "kivy\weakproxy.pyx", line 35, in kivy.weakproxy.WeakProxy.__setattr__
+   File "kivy\properties.pyx", line 520, in kivy.properties.Property.__set__
+   File "kivy\properties.pyx", line 567, in kivy.properties.Property.set
+   File "kivy\properties.pyx", line 606, in kivy.properties.Property._dispatch
+   File "kivy\_event.pyx", line 1307, in kivy._event.EventObservers.dispatch
+   File "kivy\_event.pyx", line 1189, in kivy._event.EventObservers._dispatch
+   File "C:\Users\ron\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\lang\builder.py", line 55, in custom_callback
+     exec(__kvlang__.co_value, idmap)
+	  
+   File "D:\Documents\Programming\PythonCode\kivy_code\zorn\zornfractional.kv", line 64, in <module>
+     root.calculate_colours()
+   File "D:\Documents\Programming\PythonCode\kivy_code\zorn\zorn_fractional.py", line 75, in calculate_colours
+     self.calc_colours.set_colours(self.ids)
+	  
+   File "D:\Documents\Programming\PythonCode\kivy_code\zorn\colour_calculations_fractional.py", line 107, in set_colours
+     ids.colour_02_spinner.text = "Titanium White"
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+	  
+   File "kivy\weakproxy.pyx", line 35, in kivy.weakproxy.WeakProxy.__setattr__
+   File "kivy\properties.pyx", line 520, in kivy.properties.Property.__set__
+   File "kivy\properties.pyx", line 567, in kivy.properties.Property.set
+   File "kivy\properties.pyx", line 606, in kivy.properties.Property._dispatch
+   File "kivy\_event.pyx", line 1307, in kivy._event.EventObservers.dispatch
+   File "kivy\_event.pyx", line 1189, in kivy._event.EventObservers._dispatch
+   File "C:\Users\ron\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\lang\builder.py", line 55, in custom_callback
+     exec(__kvlang__.co_value, idmap)
+   File "D:\Documents\Programming\PythonCode\kivy_code\zorn\zornfractional.kv", line 99, in <module>
+     root.calculate_colours()
+   File "D:\Documents\Programming\PythonCode\kivy_code\zorn\zorn_fractional.py", line 75, in calculate_colours
+     self.calc_colours.set_colours(self.ids)
+	  
+   File "D:\Documents\Programming\PythonCode\kivy_code\zorn\colour_calculations_fractional.py", line 115, in set_colours
+     ids.tint_02_spinner.text = "Titanium White"
+     ^^^^^^^^^^^^^^^^^^^^^^^^
+	  
+   File "kivy\weakproxy.pyx", line 35, in kivy.weakproxy.WeakProxy.__setattr__
+   File "kivy\properties.pyx", line 520, in kivy.properties.Property.__set__
+   File "kivy\properties.pyx", line 567, in kivy.properties.Property.set
+   File "kivy\properties.pyx", line 606, in kivy.properties.Property._dispatch
+   File "kivy\_event.pyx", line 1307, in kivy._event.EventObservers.dispatch
+   File "kivy\_event.pyx", line 1189, in kivy._event.EventObservers._dispatch
+   File "C:\Users\ron\AppData\Local\Programs\Python\Python311\Lib\site-packages\kivy\lang\builder.py", line 55, in custom_callback
+     exec(__kvlang__.co_value, idmap)
+   File "D:\Documents\Programming\PythonCode\kivy_code\zorn\zornfractional.kv", line 632, in <module>
+     root.calculate_colours()
+   File "D:\Documents\Programming\PythonCode\kivy_code\zorn\zorn_fractional.py", line 75, in calculate_colours
+     self.calc_colours.set_colours(self.ids)
+	  
+   File "D:\Documents\Programming\PythonCode\kivy_code\zorn\colour_calculations_fractional.py", line 124, in set_colours
+     ids.chip_02.dynamic_colour = mix_colour
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+	  
+   File "kivy\weakproxy.pyx", line 35, in kivy.weakproxy.WeakProxy.__setattr__
+   File "kivy\properties.pyx", line 520, in kivy.properties.Property.__set__
+   File "kivy\properties.pyx", line 939, in kivy.properties.ListProperty.set
+   File "kivy\properties.pyx", line 564, in kivy.properties.Property.set
+   File "kivy\properties.pyx", line 555, in kivy.properties.Property.set
+   File "kivy\properties.pyx", line 929, in kivy.properties.ListProperty.check
+   File "kivy\properties.pyx", line 593, in kivy.properties.Property.check
+ ValueError: None is not allowed for ColourChip.dynamic_colour

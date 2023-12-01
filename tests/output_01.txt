@@ -1,0 +1,160 @@
+ ic| zorn_fractional.py:80 in load_palette() at 09:48:23.361
+ ic| zorn_fractional.py:183 in compare_saved_data() at 09:48:23.365
+ ic| zorn_fractional.py:211 in get_spinners_text() at 09:48:23.367
+ ic| zorn_fractional.py:218 in get_spinners_text()
+     self.saved_data: ['Colour 1', 'Colour 2', 'Tint 1', 'Tint 2']
+ ic| zorn_fractional.py:191 in compare_saved_data()- matched: True
+ ic| zorn_fractional.py:192 in compare_saved_data()
+     self.saved_data: ['Colour 1', 'Colour 2', 'Tint 1', 'Tint 2']
+ ic| zorn_fractional.py:193 in compare_saved_data()
+     current_colours: ['Colour 1', 'Colour 2', 'Tint 1', 'Tint 2']
+ ic| zorn_fractional.py:86 in load_palette()
+     colours: ['Cadmium Orange', 'Dioxazine Purple', 'Cobalt Teal', 'Titanium White']
+ ic| zorn_fractional.py:178 in calculate_colours() at 09:48:27.711
+ ic| zorn_fractional.py:178 in calculate_colours() at 09:48:27.712
+ ic| zorn_fractional.py:178 in calculate_colours() at 09:48:27.713
+ ic| zorn_fractional.py:178 in calculate_colours() at 09:48:27.714
+ ic| zorn_fractional.py:180 in calculate_colours()
+     self.saved_data: ['Colour 1', 'Colour 2', 'Tint 1', 'Tint 2']
+ ic| zorn_fractional.py:180 in calculate_colours()
+     self.saved_data: ['Colour 1', 'Colour 2', 'Tint 1', 'Tint 2']
+ ic| zorn_fractional.py:180 in calculate_colours()
+     self.saved_data: ['Colour 1', 'Colour 2', 'Tint 1', 'Tint 2']
+ ic| zorn_fractional.py:180 in calculate_colours()
+     self.saved_data: ['Colour 1', 'Colour 2', 'Tint 1', 'Tint 2']
+ ic| zorn_fractional.py:178 in calculate_colours() at 09:48:27.726
+ ic| zorn_fractional.py:180 in calculate_colours()
+     self.saved_data: ['Colour 1', 'Colour 2', 'Tint 1', 'Tint 2']
+ ic| zorn_fractional.py:178 in calculate_colours() at 09:48:27.730
+ ic| zorn_fractional.py:180 in calculate_colours()
+     self.saved_data: ['Colour 1', 'Colour 2', 'Tint 1', 'Tint 2']
+ ic| zorn_fractional.py:94 in load_palette()
+     root.saved_data: ['Cadmium Orange', 'Dioxazine Purple', 'Cobalt Teal', 'Titanium White']
+ ic| zorn_fractional.py:178 in calculate_colours() at 09:48:38.956
+ ic| zorn_fractional.py:180 in calculate_colours()
+     self.saved_data: ['Cadmium Orange', 'Dioxazine Purple', 'Cobalt Teal', 'Titanium White']
+ ic| zorn_fractional.py:65 in create_new() at 09:48:40.844
+ ic| zorn_fractional.py:183 in compare_saved_data() at 09:48:40.846
+ ic| zorn_fractional.py:211 in get_spinners_text() at 09:48:40.848
+ ic| zorn_fractional.py:218 in get_spinners_text()
+     self.saved_data: ['Cadmium Orange', 'Dioxazine Purple', 'Cobalt Teal', 'Titanium White']
+ ic| zorn_fractional.py:191 in compare_saved_data()- matched: False
+ ic| zorn_fractional.py:192 in compare_saved_data()
+     self.saved_data: ['Cadmium Orange', 'Dioxazine Purple', 'Cobalt Teal', 'Titanium White']
+ ic| zorn_fractional.py:193 in compare_saved_data()
+     current_colours: ['Cadmium Orange', 'Dioxazine Purple', 'Yellow Green', 'Titanium White']
+ ic| zorn_fractional.py:74 in create_new()
+     root.saved_data: ['Cadmium Orange', 'Dioxazine Purple', 'Cobalt Teal', 'Titanium White']
+ ic| zorn_fractional.py:122 in save_palette() at 09:48:48.345
+ ic| zorn_fractional.py:211 in get_spinners_text() at 09:48:48.347
+ ic| zorn_fractional.py:218 in get_spinners_text()
+     self.saved_data: ['Cadmium Orange', 'Dioxazine Purple', 'Cobalt Teal', 'Titanium White']
+ ic| zorn_fractional.py:126 in save_palette()
+     data: ['Cadmium Orange', 'Dioxazine Purple', 'Yellow Green', 'Titanium White']
+ ic| zorn_fractional.py:140 in save_palette()
+     data: ['Cadmium Orange', 'Dioxazine Purple', 'Yellow Green', 'Titanium White']
+ ic| zorn_fractional.py:141 in save_palette()
+     root.saved_data: ['Cadmium Orange', 'Dioxazine Purple', 'Yellow Green', 'Titanium White']
+ ic| zorn_fractional.py:65 in create_new() at 09:48:49.927
+ ic| zorn_fractional.py:183 in compare_saved_data() at 09:48:49.929
+ ic| zorn_fractional.py:211 in get_spinners_text() at 09:48:49.932
+ ic| zorn_fractional.py:218 in get_spinners_text()
+     self.saved_data: ['Cadmium Orange', 'Dioxazine Purple', 'Yellow Green', 'Titanium White']
+ ic| zorn_fractional.py:191 in compare_saved_data()- matched: True
+ ic| zorn_fractional.py:192 in compare_saved_data()
+     self.saved_data: ['Cadmium Orange', 'Dioxazine Purple', 'Yellow Green', 'Titanium White']
+ ic| zorn_fractional.py:193 in compare_saved_data()
+     current_colours: ['Cadmium Orange', 'Dioxazine Purple', 'Yellow Green', 'Titanium White']
+ ic| zorn_fractional.py:178 in calculate_colours() at 09:48:49.939
+ ic| zorn_fractional.py:180 in calculate_colours()
+     self.saved_data: ['Cadmium Orange', 'Dioxazine Purple', 'Yellow Green', 'Titanium White']
+ ic| zorn_fractional.py:178 in calculate_colours() at 09:48:49.943
+ ic| zorn_fractional.py:180 in calculate_colours()
+     self.saved_data: ['Cadmium Orange', 'Dioxazine Purple', 'Yellow Green', 'Titanium White']
+ ic| zorn_fractional.py:178 in calculate_colours() at 09:48:49.947
+ ic| zorn_fractional.py:180 in calculate_colours()
+     self.saved_data: ['Cadmium Orange', 'Dioxazine Purple', 'Yellow Green', 'Titanium White']
+ ic| zorn_fractional.py:197 in set_spinners_text()- new: True
+ ic| zorn_fractional.py:208 in set_spinners_text()
+     self.saved_data: ['Cadmium Orange', 'Dioxazine Purple', 'Yellow Green', 'Titanium White']
+ ic| zorn_fractional.py:74 in create_new()
+     root.saved_data: ['Cadmium Orange', 'Dioxazine Purple', 'Yellow Green', 'Titanium White']
+ ic| zorn_fractional.py:178 in calculate_colours() at 09:48:54.061
+ ic| zorn_fractional.py:180 in calculate_colours()
+     self.saved_data: ['Cadmium Orange', 'Dioxazine Purple', 'Yellow Green', 'Titanium White']
+ ic| zorn_fractional.py:178 in calculate_colours() at 09:48:56.197
+ ic| zorn_fractional.py:180 in calculate_colours()
+     self.saved_data: ['Cadmium Orange', 'Dioxazine Purple', 'Yellow Green', 'Titanium White']
+ ic| zorn_fractional.py:178 in calculate_colours() at 09:48:58.057
+ ic| zorn_fractional.py:180 in calculate_colours()
+     self.saved_data: ['Cadmium Orange', 'Dioxazine Purple', 'Yellow Green', 'Titanium White']
+ ic| zorn_fractional.py:65 in create_new() at 09:49:00.544
+ ic| zorn_fractional.py:183 in compare_saved_data() at 09:49:00.546
+ ic| zorn_fractional.py:211 in get_spinners_text() at 09:49:00.549
+ ic| zorn_fractional.py:218 in get_spinners_text()
+     self.saved_data: ['Cadmium Orange', 'Dioxazine Purple', 'Yellow Green', 'Titanium White']
+ ic| zorn_fractional.py:191 in compare_saved_data()- matched: False
+ ic| zorn_fractional.py:192 in compare_saved_data()
+     self.saved_data: ['Cadmium Orange', 'Dioxazine Purple', 'Yellow Green', 'Titanium White']
+ ic| zorn_fractional.py:193 in compare_saved_data()
+     current_colours: ['Quinacridone Red', 'Ultramarine Blue', 'Yellow Green', 'Titanium White']
+ ic| zorn_fractional.py:74 in create_new()
+     root.saved_data: ['Cadmium Orange', 'Dioxazine Purple', 'Yellow Green', 'Titanium White']
+ ic| zorn_fractional.py:122 in save_palette() at 09:49:10.092
+ ic| zorn_fractional.py:211 in get_spinners_text() at 09:49:17.870
+ ic| zorn_fractional.py:218 in get_spinners_text()
+     self.saved_data: ['Cadmium Orange', 'Dioxazine Purple', 'Yellow Green', 'Titanium White']
+ ic| zorn_fractional.py:134 in save_palette()
+     data: ['Quinacridone Red', 'Ultramarine Blue', 'Yellow Green', 'Titanium White']
+ ic| zorn_fractional.py:140 in save_palette()
+     data: ['Quinacridone Red', 'Ultramarine Blue', 'Yellow Green', 'Titanium White']
+ ic| zorn_fractional.py:141 in save_palette()
+     root.saved_data: ['Quinacridone Red', 'Ultramarine Blue', 'Yellow Green', 'Titanium White']
+ ic| zorn_fractional.py:65 in create_new() at 09:49:19.287
+ ic| zorn_fractional.py:183 in compare_saved_data() at 09:49:19.289
+ ic| zorn_fractional.py:211 in get_spinners_text() at 09:49:19.291
+ ic| zorn_fractional.py:218 in get_spinners_text()
+     self.saved_data: ['Quinacridone Red', 'Ultramarine Blue', 'Yellow Green', 'Titanium White']
+ ic| zorn_fractional.py:191 in compare_saved_data()- matched: True
+ ic| zorn_fractional.py:192 in compare_saved_data()
+     self.saved_data: ['Quinacridone Red', 'Ultramarine Blue', 'Yellow Green', 'Titanium White']
+ ic| zorn_fractional.py:193 in compare_saved_data()
+     current_colours: ['Quinacridone Red', 'Ultramarine Blue', 'Yellow Green', 'Titanium White']
+ ic| zorn_fractional.py:178 in calculate_colours() at 09:49:19.300
+ ic| zorn_fractional.py:180 in calculate_colours()
+     self.saved_data: ['Quinacridone Red', 'Ultramarine Blue', 'Yellow Green', 'Titanium White']
+ ic| zorn_fractional.py:178 in calculate_colours() at 09:49:19.303
+ ic| zorn_fractional.py:180 in calculate_colours()
+     self.saved_data: ['Quinacridone Red', 'Ultramarine Blue', 'Yellow Green', 'Titanium White']
+ ic| zorn_fractional.py:178 in calculate_colours() at 09:49:19.306
+ ic| zorn_fractional.py:180 in calculate_colours()
+     self.saved_data: ['Quinacridone Red', 'Ultramarine Blue', 'Yellow Green', 'Titanium White']
+ ic| zorn_fractional.py:197 in set_spinners_text()- new: True
+ ic| zorn_fractional.py:208 in set_spinners_text()
+     self.saved_data: ['Quinacridone Red', 'Ultramarine Blue', 'Yellow Green', 'Titanium White']
+ ic| zorn_fractional.py:74 in create_new()
+     root.saved_data: ['Quinacridone Red', 'Ultramarine Blue', 'Yellow Green', 'Titanium White']
+ ic| zorn_fractional.py:80 in load_palette() at 09:49:24.443
+ ic| zorn_fractional.py:183 in compare_saved_data() at 09:49:24.445
+ ic| zorn_fractional.py:211 in get_spinners_text() at 09:49:24.447
+ ic| zorn_fractional.py:218 in get_spinners_text()
+     self.saved_data: ['Quinacridone Red', 'Ultramarine Blue', 'Yellow Green', 'Titanium White']
+ ic| zorn_fractional.py:191 in compare_saved_data()- matched: False
+ ic| zorn_fractional.py:192 in compare_saved_data()
+     self.saved_data: ['Quinacridone Red', 'Ultramarine Blue', 'Yellow Green', 'Titanium White']
+ ic| zorn_fractional.py:193 in compare_saved_data()
+     current_colours: ['Titanium White', 'Titanium White', 'Titanium White', 'Titanium White']
+ ic| zorn_fractional.py:94 in load_palette()
+     root.saved_data: ['Quinacridone Red', 'Ultramarine Blue', 'Yellow Green', 'Titanium White']
+ ic| zorn_fractional.py:80 in load_palette() at 09:49:26.654
+ ic| zorn_fractional.py:183 in compare_saved_data() at 09:49:26.656
+ ic| zorn_fractional.py:211 in get_spinners_text() at 09:49:26.658
+ ic| zorn_fractional.py:218 in get_spinners_text()
+     self.saved_data: ['Quinacridone Red', 'Ultramarine Blue', 'Yellow Green', 'Titanium White']
+ ic| zorn_fractional.py:191 in compare_saved_data()- matched: False
+ ic| zorn_fractional.py:192 in compare_saved_data()
+     self.saved_data: ['Quinacridone Red', 'Ultramarine Blue', 'Yellow Green', 'Titanium White']
+ ic| zorn_fractional.py:193 in compare_saved_data()
+     current_colours: ['Titanium White', 'Titanium White', 'Titanium White', 'Titanium White']
+ ic| zorn_fractional.py:94 in load_palette()
+     root.saved_data: ['Quinacridone Red', 'Ultramarine Blue', 'Yellow Green', 'Titanium White']

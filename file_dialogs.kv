@@ -1,0 +1,77 @@
+#:kivy 1.1.0
+#: import os os
+#: import sys sys
+#filename editor.kv
+<LoadDialog>:
+	BoxLayout:
+		size: root.size
+		pos: root.pos
+		orientation: "vertical"
+		
+		FileChooserListView:
+			id: filechooser
+			##path: os.path.abspath(os.path.dirname(sys.argv[0]))
+			## The next line sets the load/save path to a safe
+			## directory/folder for the OS. On Windows 10, it
+			## automatically creates a folder in
+			## <user>\AppData\Roaming\ named for the application.
+			## It gets the name by removing the 'App' suffix from
+			## whatever the app is named and converting the result
+			## to all lowercase. In this instance, this folder is
+			## named '<user>\AppData\Roaming\editor'
+			path: app.user_data_dir
+			filters: ['*.csv']
+			
+		BoxLayout:
+			size_hint_y: None
+			height: 30
+			
+			Button:
+				text: "Cancel"
+				on_release: root.cancel()
+				
+			Button:
+				text: "Load"
+				
+				on_release:
+					print("calling load_button")
+					root.load_button(filechooser.path, filechooser.selection)
+	
+<SaveDialog>:
+	text_input: text_input
+	
+	BoxLayout:
+		size: root.size
+		pos: root.pos
+		orientation: "vertical"
+		
+		FileChooserListView:
+			id: filechooser
+			filters: ['*.csv']
+			path: app.user_data_dir
+
+			on_selection:
+				text_input.text = self.selection and self.selection[0] or ''
+
+		TextInput:
+			id: text_input
+			size_hint_y: None
+			height: 30
+			multiline: False
+		
+		BoxLayout:
+			size_hint_y: None
+			height: 30
+			
+			Button:
+				text: "Cancel"
+				on_release: root.cancel_button()
+				
+			Button:
+				text: "Save"
+				
+				on_release:
+					root.set_pathname(filechooser.path)
+					root.set_filename(text_input.text)
+					root.cancel_button()
+					root.save_button()
